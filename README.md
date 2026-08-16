@@ -7,16 +7,29 @@ site/
   index.html
   styles.css
   assets/
-    wordmark_Bulota.svg   ← ヒーローのワードマーク(要配置)
-    icon_B_tail.svg       ← favicon / プロフィール写真の代役 / フッター(要配置)
+    wordmark_Bulota.svg   ← 原本(タグライン入り・背景あり)。ページでは使っていない
+    icon_B_tail.svg       ← 原本(背景あり)。ページでは使っていない
+    wordmark_clean.svg    ← ヒーロー用。原本から生成
+    icon_clean.svg        ← favicon / ヘッダー / プロフィール写真の代役。原本から生成
 ```
+
+原本の2つはトレース由来のSVGで、**キャンバス全面を覆うパスが背景として塗られている**
+(矩形要素ではなくパス)。そのままページに置くと背景色の板が浮くので、`*_clean.svg` を用意した。
+
+- `wordmark_clean.svg` … 背景パスを削除。さらに、h1「中小ECの定型業務を、仕組みに。」と
+  文言が重複するため、タグラインのグリフパスを外して `Bulota` + しっぽだけにしてある。
+  残したパスは原本と1バイトも同じ(viewBoxで余白を詰めただけ)
+- `icon_clean.svg` … こちらは背景のピンク面が絵柄そのもの(四隅を白で塗って丸く見せている)なので、
+  パスは1本も消さず、`clipPath` の円で切り抜いて四隅の白を落としてある
+
+原本を差し替えたときは、同じ手順で `*_clean.svg` を作り直すこと。
 
 ## 後で差し替える箇所
 
 | 箇所 | 場所 | やること |
 |---|---|---|
 | デモ動画 | `index.html` の `<!-- 7. デモ動画 -->` | コメント内の iframe を有効化して `VIDEO_ID` を差し替え、`.video-placeholder` の div を削除する |
-| 代表の写真 | `index.html` の `<!-- 6. 代表プロフィール -->` | `assets/icon_B_tail.svg` の img を `assets/ozaki.jpg` に差し替える(コメントに手順あり) |
+| 代表の写真 | `index.html` の `<!-- 6. 代表プロフィール -->` | `assets/icon_clean.svg` の img を `assets/ozaki.jpg` に差し替える(コメントに手順あり) |
 | noteリンク | `index.html` のフッター `<!-- ▼ noteのURLが決まったら -->` | `href` を自分のnoteのURLに差し替える(いまはnoteのトップ) |
 | OGP画像 | `<head>` | 画像を用意したら `og:image` を足す |
 
