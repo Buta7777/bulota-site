@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulota — 中小ECの定型業務を、仕組みに。</title>
+<meta name="description" content="受注処理・在庫管理・問い合わせ対応の手作業を自動化します。無料診断(15分・オンライン)から、スポット実装まで。">
+
+<!-- OGP: 画像を用意したら og:image を足す -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bulota — 中小ECの定型業務を、仕組みに。">
+<meta property="og:description" content="受注処理・在庫管理・問い合わせ対応の手作業を自動化します。">
+
+<link rel="icon" href="assets/icon_B_tail.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 追従ヘッダー。スマホ幅ではロゴとCTAだけ残し、ナビは隠す
+     (1ページ構成なのでハンバーガーメニューは作らない) -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <img class="brand-icon" src="assets/icon_B_tail.svg" alt="">
+      <span class="brand-name">Bulota</span>
+    </a>
+    <div class="header-right">
+      <nav class="nav" aria-label="セクション">
+        <a href="#service">サービス</a>
+        <a href="#results">実績</a>
+        <a href="#price">料金</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#contact">無料相談</a>
+    </div>
+  </div>
+</header>
+
+<!-- 1. ヒーロー -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <!-- 背景を抜いた透過版。囲みも影も付けず、ページ背景に直接置く -->
+    <img class="wordmark" src="assets/wordmark_clean.svg" alt="Bulota">
+    <!-- .ph = 途中で改行させたくないまとまり(和文は文字単位で折り返されるため) -->
+    <h1 class="hero-title"><span class="ph">中小ECの定型業務を、</span><span class="ph">仕組みに。</span></h1>
+    <p class="hero-lead"><span class="ph">受注処理・在庫管理・</span><span class="ph">問い合わせ対応の</span><span class="ph">手作業を自動化します。</span></p>
+    <a class="btn btn-primary" href="#contact">無料診断(15分)を相談する</a>
+  </div>
+</section>
+
+<main>
+
+  <!-- 2. こんな悩みありませんか -->
+  <section class="section" id="problems">
+    <div class="wrap">
+      <p class="eyebrow">Problems</p>
+      <h2 class="section-title">こんな悩み、ありませんか</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3 class="card-title">受注の転記</h3>
+          <p>注文が入るたびに、管理画面からスプレッドシートへ手で写している。</p>
+        </li>
+        <li class="card">
+          <h3 class="card-title">在庫の反映</h3>
+          <p>複数の販売先で在庫がズレる。数を合わせる作業が毎日発生している。</p>
+        </li>
+        <li class="card">
+          <h3 class="card-title">問い合わせ返信</h3>
+          <p>同じような質問への返信に、そのつど時間を取られている。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. 実績 -->
+  <section class="section section-tint" id="results">
+    <div class="wrap">
+      <p class="eyebrow">Results</p>
+      <h2 class="section-title">実績</h2>
+
+      <div class="result">
+        <p class="result-lead">受注転記の自動化で</p>
+        <p class="result-figure">
+          <span class="figure-from">1日3時間</span>
+          <span class="figure-arrow" aria-hidden="true">→</span>
+          <span class="figure-to">30分</span>
+        </p>
+        <p class="result-note"><span class="ph">の手入力に。</span><strong class="ph">月約50時間の削減</strong></p>
+      </div>
+
+      <ul class="facts">
+        <li class="fact">クラウドソーシングで自動化・AI・GAS案件 <strong class="ph">累計50万円超</strong></li>
+        <li class="fact">Shopify運用・受注転記・在庫価格監視・問い合わせ自動化を制作</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. サービスと料金 -->
+  <section class="section" id="service">
+    <div class="wrap">
+      <p class="eyebrow">Service</p>
+      <h2 class="section-title">サービスと料金</h2>
+
+      <!-- ヘッダーの「料金」はこの料金カードに飛ぶ -->
+      <div class="plans" id="price">
+        <div class="plan">
+          <p class="plan-name">無料診断</p>
+          <p class="plan-price">無料</p>
+          <p class="plan-meta">15分・オンライン</p>
+          <p class="plan-desc">いまの手作業をうかがって、自動化できるところをお伝えします。</p>
+        </div>
+        <p class="plan-arrow" aria-hidden="true">→</p>
+        <div class="plan plan-main">
+          <p class="plan-name">スポット実装</p>
+          <p class="plan-price">5〜10<span class="plan-unit">万円</span></p>
+          <p class="plan-meta">お見積り後に着手</p>
+          <p class="plan-desc">必要な仕組みを1つ作って納品します。動作確認まで伴走します。</p>
+        </div>
+      </div>
+
+      <p class="plan-notice">現在は実績づくり期間のため、割安でご提供しています。</p>
+
+      <p class="plan-extra">
+        <span class="ph">業務の自動化にとどまらず、</span><span class="ph">AIを活用した売上向上の</span><span class="ph">ご支援実績もあります。</span><br>
+        <span class="ph">リピーター施策や販促の自動化も</span><span class="ph">ご相談ください。</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 5. 進め方 -->
+  <section class="section section-tint" id="flow">
+    <div class="wrap">
+      <p class="eyebrow">Flow</p>
+      <h2 class="section-title">進め方</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">①</span>
+          <div>
+            <h3 class="step-title">15分ヒアリング</h3>
+            <p>いまの作業の流れを教えてください。オンラインで15分です。</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">②</span>
+          <div>
+            <h3 class="step-title">お見積り</h3>
+            <p>作るもの・期間・費用をお出しします。ここまで無料です。</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">③</span>
+          <div>
+            <h3 class="step-title">実装・納品</h3>
+            <p>合意した内容を実装して、お渡しします。</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">④</span>
+          <div>
+            <h3 class="step-title">動作確認まで伴走</h3>
+            <p>実際の業務で動くところまで、一緒に確認します。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. 代表プロフィール -->
+  <section class="section" id="profile">
+    <div class="wrap">
+      <p class="eyebrow">Profile</p>
+      <h2 class="section-title">代表プロフィール</h2>
+      <div class="profile">
+        <!-- 写真は後日差し替え。ここを <img src="assets/ozaki.jpg" alt="尾崎竣哉"> に置き換える -->
+        <div class="profile-photo">
+          <img src="assets/icon_B_tail.svg" alt="">
+        </div>
+        <div class="profile-body">
+          <p class="profile-name">尾崎 竣哉<span class="profile-role">Bulota 代表</span></p>
+          <p>現役バックエンドエンジニアです。本業で開発をしながら、中小ECの定型業務を自動化する仕組みを作っています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. デモ動画 -->
+  <section class="section section-tint" id="demo">
+    <div class="wrap">
+      <p class="eyebrow">Demo</p>
+      <h2 class="section-title">デモ動画</h2>
+      <p class="section-lead">実際の動きを短い動画でご覧いただけます。</p>
+
+      <div class="video">
+        <!--
+          ▼ 動画が用意できたら、下の .video-placeholder を丸ごと消して、
+             このコメントを外して VIDEO_ID を差し替える
+          <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                  title="Bulota デモ動画"
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        -->
+        <div class="video-placeholder">
+          <span class="video-icon" aria-hidden="true">▶</span>
+          <p>準備中です</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. お問い合わせ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-lead">まずは15分、いまの手作業をお聞かせください。<br>売り込みはしません。</p>
+      <!-- 主動線はコピー。メーラーを開きたい人向けにアドレス自体は mailto のままにしてある -->
+      <div class="mail-box">
+        <a class="mail-address"
+           href="mailto:ozaki@bulota.jp?subject=%E7%84%A1%E6%96%99%E8%A8%BA%E6%96%AD%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">ozaki@bulota.jp</a>
+        <button class="btn btn-primary btn-sm btn-copy" type="button"
+                data-copy="ozaki@bulota.jp">コピー</button>
+      </div>
+      <p class="copy-status" role="status" aria-live="polite"></p>
+
+      <p class="contact-note">頂いた営業メッセージへのご返信でも大丈夫です。</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- 9. フッター -->
+<footer class="footer">
+  <div class="wrap">
+
+    <div class="footer-top">
+      <img class="footer-wordmark" src="assets/wordmark_Bulota.svg" alt="Bulota">
+      <p class="footer-tagline">中小ECの定型業務を、仕組みに。</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="フッター">
+      <a href="#problems">お悩み</a>
+      <a href="#results">実績</a>
+      <a href="#service">サービス</a>
+      <a href="#price">料金</a>
+      <a href="#flow">進め方</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+
+    <ul class="footer-links">
+      <li><a href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a></li>
+      <!-- ▼ noteのURLが決まったら、この href を差し替える(いまは note のトップ) -->
+      <li><a href="https://note.com/" target="_blank" rel="noopener">note</a></li>
+    </ul>
+
+    <p class="copyright">&copy; 2026 Bulota</p>
+
+  </div>
+</footer>
+
+<script>
+// メールアドレスのコピー。file:// で開くと navigator.clipboard が使えないため、
+// 失敗したら execCommand("copy") に落とす(ローカルで開いても動くようにする)
+(function () {
+  var btn = document.querySelector(".btn-copy");
+  if (!btn) return;
+  var status = document.querySelector(".copy-status");
+  var timer = null;
+
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function done(ok) {
+    btn.textContent = ok ? "コピーしました" : "コピーできませんでした";
+    btn.classList.add("is-copied");
+    if (status) status.textContent = ok
+      ? "メールアドレスをコピーしました"
+      : "コピーできませんでした。アドレスを選択してコピーしてください";
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      btn.textContent = "コピー";
+      btn.classList.remove("is-copied");
+      if (status) status.textContent = "";
+    }, 2400);
+  }
+
+  btn.addEventListener("click", function () {
+    var text = btn.dataset.copy || "";
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text)
+        .then(function () { done(true); })
+        .catch(function () { done(fallbackCopy(text)); });
+    } else {
+      done(fallbackCopy(text));
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
