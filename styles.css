@@ -146,13 +146,27 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- 1. ヒーロー ---------- */
 
+/* 背景は hero_bg.svg。SVG側が地色(#FDF1F4)ごと持っているので、下地は保険として同色を敷く。
+   高さは従来どおり padding で決まる(min-heightは足さない=スマホで潰れない) */
 .hero {
-  background: linear-gradient(180deg, var(--white) 0%, var(--bg) 100%);
+  position: relative;
+  background-color: var(--bg);
+  background-image: url("assets/hero_bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 56px 0 64px;
   text-align: center;
   /* 下端をやわらかく */
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  overflow: hidden;   /* 角丸から背景がはみ出さないように */
+}
+
+/* ロゴ・見出し・サブ文・CTA は背景より前面 */
+.hero > .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 /* 透過SVGをそのまま置く。箱・影・背景色は付けない。
@@ -576,15 +590,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-top-right-radius: 32px;
 }
 
-.footer-wordmark { width: 132px; margin: 0 auto 12px; }
-
-/* ワードマークが濃色版で暗い背景に沈む場合は、次の1行を有効にする(白単色になる)
-.footer-wordmark { filter: brightness(0) invert(1); }
-*/
-
-.footer-tagline {
-  font-size: .9375rem;
-  color: rgba(255, 255, 255, .88);
+/* 濃色背景用の反転版SVG(文字が白・しっぽはピンクのまま)を使う。
+   CSSのfilterで白くするとしっぽまで白くなるので、ここではかけない */
+.footer-wordmark {
+  width: 132px;
+  margin: 0 auto;
 }
 
 .footer-nav,

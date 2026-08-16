@@ -9,7 +9,7 @@ site/
   assets/
     wordmark_Bulota.svg   ← 原本(タグライン入り・背景あり)。ページでは使っていない
     icon_B_tail.svg       ← 原本(背景あり)。ページでは使っていない
-    wordmark_clean.svg    ← ヒーロー用。原本から生成
+    wordmark_clean.svg    ← ヒーロー / フッター。原本から生成
     icon_clean.svg        ← favicon / ヘッダー / プロフィール写真の代役。原本から生成
 ```
 
@@ -40,9 +40,10 @@ site/
 - アンカーのズレ補正は `[id] { scroll-margin-top: calc(var(--header-h) + 16px) }` で一括。
   ヘッダーの高さを変えるときは `--header-h` を直せば補正も追従する
 - ヘッダーの「料金」は料金カード(`.plans#price`)に飛ぶ。サービスと同じセクション内
-- フッターは `#453A3E` の反転配色。**ワードマークが濃色版で暗背景に沈む場合**は、
-  `styles.css` の `.footer-wordmark { filter: brightness(0) invert(1); }` の
-  コメントを外すと白単色になる
+- フッターは `#453A3E` の反転配色。ワードマークは濃色のままだと沈むので、
+  `.footer-wordmark` に `filter: brightness(0) invert(1)` をかけて白単色で置いている
+- タグライン「中小ECの定型業務を、仕組みに。」はヒーローのh1だけに置く。
+  フッターやロゴ画像に重ねて出さない(同じ文言が二重に見える)
 
 ## 書いてある事実について
 
