@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/icon_clean.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
       <a href="works.html" aria-current="page">事例</a>
       <a href="index.html#price">料金</a>
       <a href="about.html">事業者情報</a>
-      <a href="index.html#contact">お問い合わせ</a>
+      <a class="nav-cta" href="index.html#contact">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -33,12 +33,12 @@
     </div>
   </div>
 
-  <section class="section" style="padding-top:24px">
-    <div class="wrap">
+  <section class="section">
+    <div class="wrap narrow">
       <p class="notice">社名は出していません。数字はお客様からの聞き取りによるものです。</p>
 
-      <article class="case" id="case3">
-        <h2 class="case-title">事例1 ネットショップ</h2>
+      <article class="case-detail" id="case1">
+        <h2>事例1 ネットショップ</h2>
         <dl class="case-dl">
           <dt>困りごと</dt>
           <dd>注文を管理画面から表へ手で写していた</dd>
@@ -49,8 +49,8 @@
         </dl>
       </article>
 
-      <article class="case" id="case4">
-        <h2 class="case-title">事例2 食品卸(神奈川県内、導入中)</h2>
+      <article class="case-detail" id="case2">
+        <h2>事例2 食品卸(神奈川県内、導入中)</h2>
         <dl class="case-dl">
           <dt>困りごと</dt>
           <dd>取引先からのFAX・電話の注文を打ち直していた</dd>
@@ -63,8 +63,8 @@
     </div>
   </section>
 
-  <section class="section section-soft">
-    <div class="wrap">
+  <section class="cta-band">
+    <div class="wrap narrow">
       <p>同じような手作業がありましたら、15分のヒアリングでお聞かせください。</p>
       <!-- 予約URLが入ったら文言を「15分のヒアリングを予約する」に戻す -->
       <a class="btn" href="index.html#contact">15分のヒアリングを相談する</a>
@@ -75,20 +75,24 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p class="footer-name">Bulota(ブロータ)</p>
-    <address class="footer-info">
-      東京都町田市南町田2-23-33<br>
-      電話 <a href="tel:070-9132-8350">070-9132-8350</a><br>
-      メール <a href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
-    </address>
-    <nav class="footer-nav" aria-label="フッターメニュー">
-      <a href="works.html">事例</a>
-      <a href="index.html#price">料金</a>
-      <a href="about.html">事業者情報</a>
-      <a href="index.html#contact">お問い合わせ</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-    </nav>
-    <p class="footer-meta">最終更新: 2026年11月<br>&copy; 2026 Bulota</p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Bulota(ブロータ)</p>
+        <address class="footer-info">
+          東京都町田市南町田2-23-33<br>
+          電話 <a href="tel:070-9132-8350">070-9132-8350</a><br>
+          メール <a href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
+        </address>
+      </div>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="works.html">事例</a>
+        <a href="index.html#price">料金</a>
+        <a href="about.html">事業者情報</a>
+        <a href="index.html#contact">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </nav>
+    </div>
+    <p class="footer-meta">最終更新: 2026年11月　&copy; 2026 Bulota</p>
   </div>
 </footer>
 

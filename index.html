@@ -12,7 +12,7 @@
 <link rel="icon" href="assets/icon_clean.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
       <a href="works.html">事例</a>
       <a href="index.html#price">料金</a>
       <a href="about.html">事業者情報</a>
-      <a href="index.html#contact">お問い合わせ</a>
+      <a class="nav-cta" href="index.html#contact">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -32,73 +32,182 @@
 <main>
 
   <section class="hero">
-    <div class="wrap">
-      <h1 class="hero-title"><span class="ph">注文・請求・在庫の</span><span class="ph">打ち直しを、</span><span class="ph">仕組みに。</span></h1>
-      <p class="hero-lead">毎日くり返している手作業を、今のやり方を大きく変えずに自動化します。<br>
-        中小企業の現場に合わせて、1つの作業から作ります。</p>
-      <!-- 予約ページのURLが決まったら、href を予約ページに差し替える(いまはお問い合わせ欄へ飛ぶ) -->
-      <!-- 予約URLが入ったら文言を「15分のヒアリングを予約する」に戻す -->
-      <a class="btn" href="#contact">15分のヒアリングを相談する</a>
+    <div class="wrap hero-inner">
+      <div>
+        <h1 class="hero-title"><span class="ph">注文・請求・在庫の</span><span class="ph">打ち直しを、</span><span class="ph">仕組みに。</span></h1>
+        <p class="hero-lead">毎日くり返している手作業を、今のやり方を大きく変えずに自動化します。中小企業の現場に合わせて、1つの作業から作ります。</p>
+        <div class="hero-actions">
+          <!-- 予約ページのURLが決まったら、href を予約ページに差し替える(いまはお問い合わせ欄へ飛ぶ) -->
+          <!-- 予約URLが入ったら文言を「15分のヒアリングを予約する」に戻す -->
+          <a class="btn btn-light" href="#contact">15分のヒアリングを相談する</a>
+          <a class="hero-tel" href="tel:070-9132-8350"><span>お電話でもどうぞ</span>070-9132-8350</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <svg viewBox="0 0 540 400" role="img" aria-label="手書きのFAX注文書が、整った受注一覧になるイメージ" xmlns="http://www.w3.org/2000/svg">
+          <!-- 左: FAXの注文書(手書き) -->
+          <g transform="rotate(-5 120 210)">
+            <rect x="22" y="78" width="196" height="262" fill="#ffffff"/>
+            <rect x="22" y="78" width="196" height="262" fill="none" stroke="#b9c4d1" stroke-width="1"/>
+            <text x="38" y="110" font-size="17" font-weight="700" fill="#10263f">注文書</text>
+            <text x="176" y="108" font-size="11" fill="#7a8796">FAX</text>
+            <line x1="38" y1="122" x2="202" y2="122" stroke="#10263f" stroke-width="1.5"/>
+            <g fill="none" stroke="#3b4a5c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M40 150 q7 -9 13 0 t13 0 t13 0 t12 -2 t12 3"/>
+              <path d="M150 152 q5 -8 9 0 t9 -1 t9 2"/>
+              <path d="M40 184 q8 -8 14 1 t14 -1 t13 1 t12 0"/>
+              <path d="M152 186 q6 -9 10 -1 t9 1"/>
+              <path d="M40 218 q6 -8 12 0 t12 1 t13 -2 t13 2 t11 -1"/>
+              <path d="M150 220 q5 -7 9 0 t9 0 t8 1"/>
+              <path d="M40 252 q8 -9 14 0 t13 0 t12 1"/>
+              <path d="M154 254 q5 -8 9 0 t8 0"/>
+            </g>
+            <g stroke="#d5dbe3" stroke-width="1">
+              <line x1="38" y1="164" x2="202" y2="164"/><line x1="38" y1="198" x2="202" y2="198"/>
+              <line x1="38" y1="232" x2="202" y2="232"/><line x1="38" y1="266" x2="202" y2="266"/>
+              <line x1="140" y1="132" x2="140" y2="266"/>
+            </g>
+            <path d="M44 300 q14 -14 26 0 t26 -2 t22 3" fill="none" stroke="#3b4a5c" stroke-width="2.2" stroke-linecap="round"/>
+          </g>
+          <!-- まん中: 矢印 -->
+          <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="238" y1="208" x2="272" y2="208"/>
+            <polyline points="262,196 274,208 262,220"/>
+          </g>
+          <!-- 右: 受注一覧(整った表) -->
+          <g>
+            <rect x="290" y="56" width="232" height="292" rx="4" fill="#ffffff"/>
+            <rect x="290" y="56" width="232" height="44" rx="4" fill="#dfe7f0"/>
+            <rect x="290" y="80" width="232" height="20" fill="#dfe7f0"/>
+            <text x="306" y="85" font-size="16" font-weight="700" fill="#10263f">受注一覧</text>
+            <g font-size="11" fill="#7a8796">
+              <text x="306" y="122">取引先</text><text x="392" y="122">品名</text><text x="484" y="122">数量</text>
+            </g>
+            <line x1="306" y1="131" x2="506" y2="131" stroke="#10263f" stroke-width="1.5"/>
+            <g font-size="14" fill="#1a1f26">
+              <text x="306" y="158">A商店</text><text x="392" y="158">商品1</text><text x="506" y="158" text-anchor="end">12</text>
+              <text x="306" y="192">B食堂</text><text x="392" y="192">商品2</text><text x="506" y="192" text-anchor="end">5</text>
+              <text x="306" y="226">C屋</text><text x="392" y="226">商品3</text><text x="506" y="226" text-anchor="end">30</text>
+              <text x="306" y="260">D商会</text><text x="392" y="260">商品1</text><text x="506" y="260" text-anchor="end">8</text>
+            </g>
+            <g stroke="#d5dbe3" stroke-width="1">
+              <line x1="306" y1="170" x2="506" y2="170"/><line x1="306" y1="204" x2="506" y2="204"/>
+              <line x1="306" y1="238" x2="506" y2="238"/><line x1="306" y1="272" x2="506" y2="272"/>
+            </g>
+            <text x="306" y="312" font-size="13" fill="#55606e">会計ソフトへ取り込み</text>
+            <!-- 済の印(朱) -->
+            <g transform="rotate(-10 478 306)">
+              <circle cx="478" cy="306" r="23" fill="none" stroke="#c4372b" stroke-width="3"/>
+              <text x="478" y="315" font-size="25" font-weight="700" fill="#c4372b" text-anchor="middle">済</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption>イメージ図</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="section section-soft" id="problems">
+  <section class="assure" aria-label="お約束">
     <div class="wrap">
-      <h2 class="section-title">こんな作業はありませんか</h2>
-      <ul class="list">
-        <li>FAXや電話の注文を、販売管理や会計ソフトに打ち直している</li>
-        <li>見積書や請求書を、1件ずつExcelで作っている</li>
-        <li>日報や在庫の数を、紙やExcelから集計し直している</li>
+      <ul class="assure-list">
+        <li>お見積りまで無料<span>15分のヒアリングから、金額のご提示まで</span></li>
+        <li>作る前に、範囲と金額を書面で確定<span>ご納得いただいてから着手します</span></li>
+        <li>サーバーを使わない形も選べます<span>御社のパソコンの中だけで動かせます</span></li>
       </ul>
     </div>
   </section>
 
-  <section class="section" id="works">
-    <div class="wrap">
-      <h2 class="section-title">事例</h2>
-      <ul class="case-list">
-        <li><span class="case-name">ネットショップ</span>受注の転記。手入力が1日3時間から30分に</li>
-        <li><span class="case-name">食品卸(神奈川県内)</span>受発注の仕組みを導入中。2026年12月に納品予定</li>
+  <section class="section" id="problems">
+    <div class="wrap section-grid">
+      <h2 class="section-title">こんな作業は<br>ありませんか</h2>
+      <ul class="problems">
+        <li><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="1" y="1" width="50" height="50" fill="#f3f5f8"/><rect x="15" y="9" width="22" height="14" fill="#fff" stroke="#10263f" stroke-width="2"/><rect x="9" y="21" width="34" height="18" rx="2" fill="#10263f"/><rect x="16" y="32" width="20" height="12" fill="#fff" stroke="#10263f" stroke-width="2"/><line x1="20" y1="37" x2="32" y2="37" stroke="#10263f" stroke-width="2"/><circle cx="37" cy="27" r="1.8" fill="#fff"/></svg><span>FAXや電話の注文を、販売管理や会計ソフトに打ち直している</span></li>
+        <li><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="1" y="1" width="50" height="50" fill="#f3f5f8"/><path d="M14 9h17l8 8v26H14z" fill="#fff" stroke="#10263f" stroke-width="2" stroke-linejoin="round"/><path d="M31 9v8h8" fill="none" stroke="#10263f" stroke-width="2" stroke-linejoin="round"/><g stroke="#10263f" stroke-width="2"><line x1="19" y1="24" x2="34" y2="24"/><line x1="19" y1="30" x2="34" y2="30"/><line x1="19" y1="36" x2="28" y2="36"/></g></svg><span>見積書や請求書を、1件ずつExcelで作っている</span></li>
+        <li><svg viewBox="0 0 52 52" aria-hidden="true"><rect x="1" y="1" width="50" height="50" fill="#f3f5f8"/><rect x="10" y="12" width="32" height="28" fill="#fff" stroke="#10263f" stroke-width="2"/><g stroke="#10263f" stroke-width="2"><line x1="10" y1="21" x2="42" y2="21"/><line x1="10" y1="30" x2="42" y2="30"/><line x1="22" y1="12" x2="22" y2="40"/><line x1="32" y1="12" x2="32" y2="40"/></g><rect x="32" y="30" width="10" height="10" fill="#10263f"/></svg><span>日報や在庫の数を、紙やExcelから集計し直している</span></li>
       </ul>
-      <p><a class="more-link" href="works.html">事例をくわしく見る</a></p>
     </div>
   </section>
 
-  <section class="section section-soft" id="price">
-    <div class="wrap">
-      <h2 class="section-title">料金の目安</h2>
-      <table class="table">
+  <section class="section section-paper" id="works">
+    <div class="wrap section-grid">
+      <div>
+        <h2 class="section-title">事例</h2>
+        <p class="section-note">社名は出していません。数字はお客様からの聞き取りによるものです。</p>
+      </div>
+      <div>
+        <div class="cases">
+          <article class="case-card">
+            <p class="case-kind">ネットショップ<small>受注の転記を自動化</small></p>
+            <p class="case-text">注文を管理画面から表へ手で写していた作業を、自動で転記する仕組みにしました。</p>
+            <div class="case-result">
+              <span class="case-result-label">1日の手入力</span>
+              <p class="case-figure">3時間<span class="to">から</span>30分<small>月に約50時間の削減</small></p>
+            </div>
+          </article>
+          <article class="case-card">
+            <p class="case-kind">食品卸(神奈川県内)<small>受発注の仕組み</small></p>
+            <p class="case-text">Web発注と、FAX・電話注文の入力を1つの台帳にまとめ、会計ソフトへ取り込む仕組みを作っています。</p>
+            <div class="case-result">
+              <span class="tag">導入中</span>
+              <p class="small" style="margin-top:10px">2026年12月に納品予定。数字は納品後に掲載します。</p>
+            </div>
+          </article>
+        </div>
+        <a class="more-link" href="works.html">事例をくわしく見る</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="price">
+    <div class="wrap section-grid">
+      <div>
+        <h2 class="section-title">料金の目安</h2>
+        <p class="section-note">正確な金額は、お話を伺ってからお見積りします。</p>
+      </div>
+      <table class="ledger">
         <tbody>
-          <tr><th scope="row">15分のヒアリング</th><td>無料<span class="note">オンラインまたはお電話</span></td></tr>
-          <tr><th scope="row">1つの作業の自動化</th><td>5万〜10万円<span class="note">例: 注文を入力する画面、請求書の自動作成、在庫表の自動集計 など</span></td></tr>
-          <tr><th scope="row">受発注など仕組み全体</th><td>ヒアリングの後にお見積り</td></tr>
-          <tr><th scope="row">保守</th><td>月5,000〜10,000円<span class="note">動作の見守りとサーバー費用。機能の追加は別途お見積り</span></td></tr>
+          <tr><th scope="row">15分のヒアリング</th><td><span class="amount">無料</span><span class="note">オンラインまたはお電話</span></td></tr>
+          <tr><th scope="row">1つの作業の自動化</th><td><span class="amount">5万〜10万円</span><span class="note">例: 注文を入力する画面、請求書の自動作成、在庫表の自動集計 など</span></td></tr>
+          <tr><th scope="row">受発注など仕組み全体</th><td><span class="amount">ヒアリングの後にお見積り</span></td></tr>
+          <tr><th scope="row">保守</th><td><span class="amount">月5,000〜10,000円</span><span class="note">動作の見守り。サーバーを使う場合は、その費用を含みます。機能の追加は別途お見積り</span></td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <section class="section" id="flow">
-    <div class="wrap">
+  <section class="section section-paper" id="flow">
+    <div class="wrap section-grid">
       <h2 class="section-title">進め方</h2>
-      <ol class="steps">
-        <li>15分ヒアリング</li>
-        <li><span>お見積り <span class="step-free">(ここまで無料)</span></span></li>
-        <li>作って納品</li>
-        <li>動作確認まで並走</li>
-      </ol>
+      <div>
+        <ol class="steps">
+          <li>15分ヒアリング</li>
+          <li>お見積り<span class="step-sub">ここまで無料</span></li>
+          <li>作って納品</li>
+          <li>動作確認まで並走</li>
+        </ol>
+        <div class="promise">
+          <h3>お約束</h3>
+          <ul>
+            <li>作る前に、「できること」と金額をお見積書に書いてお渡しします。</li>
+            <li>お見積書にない追加のご要望は、その都度、先に金額をお伝えします。</li>
+            <li>契約書と、秘密を守る取り決めを交わします。</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section section-soft" id="profile">
-    <div class="wrap">
+  <section class="section" id="profile">
+    <div class="wrap section-grid">
       <h2 class="section-title">代表</h2>
+      <!-- 顔写真: assets/ozaki.jpg を置いたら、下の img のコメントを外し、
+           <div class="profile"> を <div class="profile has-photo"> にする -->
       <div class="profile">
-        <!-- 顔写真: assets/ozaki.jpg を置いたら、下のコメントを外す
+        <!--
         <img class="profile-photo" src="assets/ozaki.jpg" alt="代表 尾崎 竣哉" width="160" height="160">
         -->
         <div class="profile-body">
-          <p class="profile-name">尾崎 竣哉<span class="profile-kana">おざき しゅんや</span></p>
+          <p class="profile-name"><span class="profile-role">Bulota 代表</span>尾崎 竣哉<span class="profile-kana">おざき しゅんや</span></p>
           <p>現役のバックエンドエンジニア(Java / PostgreSQL)。<br>
             通信会社向けシステムの設計と試験を担当しながら、Bulotaで中小企業の業務の仕組みを作っています。</p>
         </div>
@@ -106,34 +215,34 @@
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="wrap">
-      <h2 class="section-title">お問い合わせ</h2>
-      <p>15分で、今の手作業をお聞かせください。2営業日以内に返信します。</p>
-      <ul class="contact-list">
-        <!-- 予約ページのURLが決まったら、このコメントを外して URL を差し替える
-        <li>
-          <span class="contact-label">日程を予約する</span>
-          <a class="btn" href="【予約ページのURL】" target="_blank" rel="noopener">15分のヒアリングを予約する</a>
-        </li>
-        -->
-        <!-- Googleフォームの埋め込みコード(iframe)を受け取ったら、このコメントを外して差し替える
-        <li class="form-embed">
-          <span class="contact-label">フォーム</span>
-          【Googleフォームの埋め込みコード】
-        </li>
-        -->
-        <li>
-          <span class="contact-label">メール</span>
-          <a class="contact-value" href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
-        </li>
-        <li>
-          <span class="contact-label">電話</span>
-          <a class="contact-value" href="tel:070-9132-8350">070-9132-8350</a>
-          <span class="contact-sub">出られないときは折り返します</span>
-        </li>
-      </ul>
-      <p class="small" style="margin-top:16px">いただいた情報の取り扱いは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>お問い合わせ</h2>
+        <p class="contact-lead">15分で、今の手作業をお聞かせください。2営業日以内に返信します。</p>
+        <ul class="contact-list">
+          <!-- 予約ページのURLが決まったら、このコメントを外して URL を差し替える
+          <li>
+            <span class="contact-label">日程を予約する</span>
+            <a class="btn btn-light" href="【予約ページのURL】" target="_blank" rel="noopener">15分のヒアリングを予約する</a>
+          </li>
+          -->
+          <li>
+            <span class="contact-label">電話</span>
+            <a class="contact-value" href="tel:070-9132-8350">070-9132-8350</a>
+            <span class="contact-sub">出られないときは折り返します</span>
+          </li>
+          <li>
+            <span class="contact-label">メール</span>
+            <a class="contact-value" href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
+          </li>
+        </ul>
+        <p class="small" style="margin-top:18px">いただいた情報の取り扱いは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      </div>
+      <div class="form-panel">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8i3GaxVLeOZmSlvVEXM8cGp-iq3odg3yxhxpMYgRjFmZh_A/viewform?embedded=true" title="お問い合わせフォーム" loading="lazy">読み込んでいます…</iframe>
+        <a class="small" href="https://docs.google.com/forms/d/e/1FAIpQLSe8i3GaxVLeOZmSlvVEXM8cGp-iq3odg3yxhxpMYgRjFmZh_A/viewform" target="_blank" rel="noopener">フォームが表示されないときは、こちらから開けます</a>
+      </div>
     </div>
   </section>
 
@@ -141,20 +250,24 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p class="footer-name">Bulota(ブロータ)</p>
-    <address class="footer-info">
-      東京都町田市南町田2-23-33<br>
-      電話 <a href="tel:070-9132-8350">070-9132-8350</a><br>
-      メール <a href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
-    </address>
-    <nav class="footer-nav" aria-label="フッターメニュー">
-      <a href="works.html">事例</a>
-      <a href="index.html#price">料金</a>
-      <a href="about.html">事業者情報</a>
-      <a href="index.html#contact">お問い合わせ</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-    </nav>
-    <p class="footer-meta">最終更新: 2026年11月<br>&copy; 2026 Bulota</p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Bulota(ブロータ)</p>
+        <address class="footer-info">
+          東京都町田市南町田2-23-33<br>
+          電話 <a href="tel:070-9132-8350">070-9132-8350</a><br>
+          メール <a href="mailto:ozaki@bulota.jp">ozaki@bulota.jp</a>
+        </address>
+      </div>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <a href="works.html">事例</a>
+        <a href="index.html#price">料金</a>
+        <a href="about.html">事業者情報</a>
+        <a href="index.html#contact">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </nav>
+    </div>
+    <p class="footer-meta">最終更新: 2026年11月　&copy; 2026 Bulota</p>
   </div>
 </footer>
 
